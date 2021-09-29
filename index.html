@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" >
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>Тестирование</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        
+        <div class="tasks-wrapper">
+            <h1>Тестирование</h1>
+            <div class="task-header"><h2>Задача 1</h2></div>
+            <div class="task-body">
+                <h3>Превью статьи</h3>
+                <form class="forms" id="formTask1" action="tasks/task1.php" name="form" method="POST">
+                    <label>Текст статьи: <textarea name="articleText" id="" cols="50" rows="5"></textarea></label>
+                    <label>Ссылка : <input type="text" name="articleLink"></label>
+                    <button class="submit-button" type="submit">Получить превью</button>
+                    <p class="notice">В коде имеются стандартные варианты статьи и ссылки, заполнять не обязательно!</p>
+                </form>
+                <div class="result"></div>
+            </div>
+            <div class="task-header"><h2>Задача 2</h2></div>
+            <div class="task-body">
+                <h3>Сколько коммитов нужно Пете, чтобы исправить код?</h3>
+                <form class="forms" id="formTask2" action="tasks/task2.php" name="form" method="POST">
+                    <label>Количество фатальных ошибок (не больше 1000): <input type="number" name="fatal_errors" ></label>
+                    <label>Количество ворнингов (не больше 1000): <input type="number" name="warnings" ></label>
+                    <button class="submit-button" type="submit">Проверить</button>
+                </form>
+                <div class="result"></div>
+            </div>
+            <div class="task-header"><h2>Задача 3</h2></div>
+            <div class="task-body">
+                <h3>Поиск позиции числа для странной математики</h3>
+                <form class="forms" id="formTask3" action="tasks/task3.php" name="form" method="POST">
+                    <label>Количество чисел: <input type="number" name="numbersLen" ></label>
+                    <label>Интересующее число: <input type="number" name="number" ></label>
+                    <button class="submit-button" type="submit">Найти</button>
+                </form>
+                <div class="result"></div>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

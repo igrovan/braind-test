@@ -1,0 +1,99 @@
+body {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.tasks-wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.task-header {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 0 30px;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.forms label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 100%;
+}
+
+.forms input {
+    width: 200px;
+    padding: 5px;
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #2196f3;
+    color: #ffffff;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.notice {
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-size: 14px;
+    background-color: lightgray;
+}
+
+.result {
+    padding: 0 15px;
+    margin: 20px 0;
+}
+
+.error {
+    color: #ff0000;
+    font-weight: 600;
+}
+
+.submit-button:hover {
+    background-color: #1265ac;
+}
+
+.collapse {
+    display: block;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.collapse.show {
+    max-height: unset;
+    transition: max-height 0.5s ease-in-out;
+}
